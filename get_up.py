@@ -38,6 +38,7 @@ def get_one_sentence(up_list):
 
 def get_today_get_up_status(issue):
     comments = list(issue.get_comments())
+    print(f"comments is {comments}.")
     if not comments:
         return False
     up_list = []
