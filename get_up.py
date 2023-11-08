@@ -131,6 +131,7 @@ def main(
     u = login(github_token)
     repo = u.get_repo(repo_name)
     issue = repo.get_issue(GET_UP_ISSUE_NUMBER)
+    print(f"The issue is {issue} and get the issue is {get_today_get_up_status(issue)}.")
     is_today, up_list = get_today_get_up_status(issue)
     if is_today:
         print("Today I have recorded the wake up time")
