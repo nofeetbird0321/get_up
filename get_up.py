@@ -80,7 +80,7 @@ def make_pic_and_save(sentence):
         with open(os.path.join(new_path, f"{index}.jpeg"), "wb") as output_file:
             for chunk in response.iter_content(chunk_size=8192):
                 output_file.write(chunk)
-    image_url_for_issue = f"https://github.com/yihong0618/2023/blob/main/OUT_DIR/{date_str}/{index}.jpeg?raw=true"
+    image_url_for_issue = f"https://github.com/nofeetbird0321/get_up/blob/main/OUT_DIR/{date_str}/{index}.jpeg?raw=true"
     return image_url, image_url_for_issue
 
 
@@ -94,7 +94,7 @@ def make_pic_and_save(sentence, bing_cookie):
         os.mkdir(new_path)
     i.save_images(images, new_path)
     index = random.randint(0, len(images) - 1)
-    image_url_for_issue = f"https://github.com/yihong0618/2023/blob/main/OUT_DIR/{date_str}/{index}.jpeg?raw=true"
+    image_url_for_issue = f"https://github.com/nofeetbird0321/get_up/blob/main/OUT_DIR/{date_str}/{index}.jpeg?raw=true"
     return images, image_url_for_issue
 
 
